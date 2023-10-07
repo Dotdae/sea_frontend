@@ -1,0 +1,26 @@
+<div class="bg-black h-screen width-screen">
+  <app-navigation/>
+  <p class="text-white text-center py-96">
+    <button (click)="getEmployees()">Get data</button>
+    <button (click)="getEmployee(14)">Get by id</button>
+    <app-card />
+    <app-hero />
+  </p>
+  <div class="bg-black">
+    <ul *ngFor="let employee of employees">
+      <li class="text-white">id: {{employee.id_Empleado}}</li>
+      <li class="text-white">Nombre: {{employee.Nombres}}</li>
+      <li class="text-white">Apellido: {{employee.Apellido}}</li>
+      <li class="text-white">id_Puesto: {{employee.id_Puesto}}</li>
+      <li class="text-white">Activo: {{employee.Activo}}</li>
+      <li class="text-white">Código de Acceso: {{employee.codigoAcceso}}</li>
+    </ul>
+    <ul *ngFor="let user of employee">
+      <li class="text-white">id: {{user.id_Empleado}}</li>
+      <li class="text-white">Nombre: {{user.Nombres}}</li>
+      <li class="text-white">Apellido: {{user.Apellido}}</li>
+      <li class="text-white">id_puesto: {{user.id_Puesto}}</li>
+      <li class="text-white">Código de acceso: {{user.codigoAcceso}}</li>
+    </ul>
+  </div>
+</div>
