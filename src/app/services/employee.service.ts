@@ -16,7 +16,6 @@ export class EmployeeService {
     return this.http.get<Employee[]>('api/employees');
   }
 
-
   // GET by ID.
 
   public getEmployee(id: number): Observable<Employee[]>{
@@ -24,7 +23,6 @@ export class EmployeeService {
     return this.http.get<Employee[]>(`api/employees/${id}`);
 
   }
-
 
   // POST method.
 

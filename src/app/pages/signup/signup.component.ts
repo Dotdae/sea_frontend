@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { EmployeeService } from 'src/app/services/employee.service';
 
 @Component({
@@ -13,7 +14,10 @@ export class SignupComponent {
   lastname : string = '';
   puesto : number = 0;
 
-  constructor(public employeeService: EmployeeService ){}
+  constructor(
+    public employeeService: EmployeeService,
+    private router: Router
+    ){}
 
 
   createEmployee()
@@ -26,10 +30,19 @@ export class SignupComponent {
       "status": "ON",
     }
 
-    console.log(newEmployee);
-
     this.employeeService.postEmployee(newEmployee)
-    .subscribe(data => console.log(data));
+    .subscribe(data =>{
+
+      console.log(data.id);
+
+      if(data){
+
+        this.router.navigateByUrl('/sucess',
+        { state: {name: data.name, lastname: data.lastname, id: data.id, accessCode: data.randomCode } });
+
+      }
+
+    });
 
   }
 

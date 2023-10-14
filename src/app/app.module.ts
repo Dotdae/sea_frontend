@@ -13,6 +13,8 @@ import { CardComponent } from './pages/home/components/card/card.component';
 import { HeroComponent } from './pages/home/components/hero/hero.component';
 import { NavigationComponent } from './pages/home/components/navigation/navigation.component';
 import { FormsModule } from '@angular/forms';
+import { SucessComponent } from './pages/signup/components/sucess/sucess.component';
+import { EmployeeComponent } from './pages/dashboard/components/employee/employee.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { FormsModule } from '@angular/forms';
     CardComponent,
     HeroComponent,
     NavigationComponent,
+    SucessComponent,
+    EmployeeComponent,
   ],
   imports: [
     BrowserModule,

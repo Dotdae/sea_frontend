@@ -1,1 +1,6 @@
-<p>dashboard works!</p>
+<div class="dashboard-container">
+  <div *ngFor="let employee of employeeData">
+    <app-employee [employeeName]="employee.Nombres" [employeePuesto]="employee.id_Puesto" [employeeAvailable]="employee.Activo"/>
+  </div>
+</div>
+
