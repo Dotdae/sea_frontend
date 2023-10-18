@@ -15,6 +15,9 @@ import { NavigationComponent } from './pages/home/components/navigation/navigati
 import { FormsModule } from '@angular/forms';
 import { SucessComponent } from './pages/signup/components/sucess/sucess.component';
 import { EmployeeComponent } from './pages/dashboard/components/employee/employee.component';
+import { SidebarComponent } from './pages/dashboard/components/sidebar/sidebar.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ContainerComponent } from './pages/dashboard/components/container/container.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,9 @@ import { EmployeeComponent } from './pages/dashboard/components/employee/employe
     NavigationComponent,
     SucessComponent,
     EmployeeComponent,
+    SidebarComponent,
+    HeaderComponent,
+    ContainerComponent,
   ],
   imports: [
     BrowserModule,

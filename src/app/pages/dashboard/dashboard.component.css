@@ -1,10 +1,17 @@
-.dashboard-container{
-
+.main-container{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  gap: 2rem;
+}
 
+.side-nav{
+  width: 350px;
+  min-width: 230px;
+  min-height: calc(100vh - 70px);
+  background-color: cadetblue;
+  color: #FFF;
+  box-shadow: 5px 5px 5px #000;
+
+}
+
+.main{
+  padding: 30px;
 }

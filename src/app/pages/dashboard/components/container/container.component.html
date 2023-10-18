@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="flex flex-wrap gap-6">
+    <div *ngFor="let employee of employeeData">
+      <app-employee [employeeName]="employee.Nombres" [employeePuesto]="employee.id_Puesto" [employeeAvailable]="employee.Activo"/>
+    </div>
+  </div>
+</div>

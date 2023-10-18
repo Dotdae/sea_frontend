@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SocketService } from 'src/app/core/socket/socket.service';
 import { EmployeeService } from 'src/app/services/employee.service';
-import { HttpClient } from '@angular/common/http';
 import { Employee } from 'src/app/models/employee.model';
 
 @Component({
